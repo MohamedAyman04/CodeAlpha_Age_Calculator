@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 
-body {
+#body {
   display: grid;
+  background-image: linear-gradient(to bottom right, cyan, #05a096);
   height: 100vh;
   align-content: center;
   justify-content: center;
