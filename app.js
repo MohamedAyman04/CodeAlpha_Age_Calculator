@@ -1,5 +1,5 @@
 const date = document.querySelector("#date");
-const divs = Array.from(document.querySelectorAll("div"));
+const divs = Array.from(document.querySelectorAll(".element"));
 const data = document.querySelector(".data");
 
 const calculateAge = () => {
@@ -19,7 +19,5 @@ const calculateAge = () => {
     divs[2].firstElementChild.textContent = days;
 
     data.style.visibility = "visible";
-
-    console.log(`${years}, ${months}, ${days}`);
   }
 };

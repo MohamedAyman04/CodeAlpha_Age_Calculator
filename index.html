@@ -20,25 +20,30 @@
   </head>
   <body id="body">
     <section>
-      <form>
-        <input placeholder="date" type="date" name="date" id="date" />
-      </form>
-      <button onclick="calculateAge()" class="btn btn-info" type="button">
-        Calculate
-      </button>
+      <div>
+        <form>
+          <input placeholder="date" type="date" name="date" id="date" />
+        </form>
+        <button onclick="calculateAge()" class="btn btn-info" type="button">
+          Calculate
+        </button>
+      </div>
+      <div>
+        <p class="remove-margin">Enter your Birthday to Calculate your age</p>
+      </div>
     </section>
     <section class="data">
-      <div>
+      <div class="element">
         <span>1</span>
-        <p>Years</p>
+        <p class="remove-margin">Years</p>
       </div>
-      <div>
+      <div class="element">
         <span>2</span>
-        <p>Months</p>
+        <p class="remove-margin">Months</p>
       </div>
-      <div>
+      <div class="element">
         <span>3</span>
-        <p>Days</p>
+        <p class="remove-margin">Days</p>
       </div>
     </section>
     <script src="./app.js"></script>

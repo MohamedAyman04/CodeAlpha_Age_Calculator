@@ -15,16 +15,30 @@
 }
 
 section {
-  height: 100px;
-  width: 400px;
+  padding: 20px 10px;
   background-color: #05a096;
   border-radius: 10px;
   text-align: center;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section div {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 20px;
+  color: #fff;
+}
+
+.remove-margin {
+  margin: 0;
 }
 
 section form input {
@@ -45,10 +59,9 @@ section form input {
   flex-wrap: wrap;
 }
 
-.data div {
+.data .element {
   background-color: #05a096;
-  width: 100px;
-  height: 100px;
+  padding: 10px 35px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -57,18 +70,39 @@ section form input {
   flex-wrap: nowrap;
   border-radius: 10px;
   color: #fff;
+  gap: 10px;
 }
 
 .data div span {
   font-size: 36px;
   display: flex;
-  height: 85%;
   align-items: center;
   justify-content: center;
 }
 
 .data div p {
   font-size: 16px;
-  height: 15%;
   color: #ffffffbf;
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section {
+    width: 200px;
+  }
+
+  section form input {
+    width: 150px;
+  }
 }
